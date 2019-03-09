@@ -10,7 +10,8 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
  *
  * @author YathisH
  */
-@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class, SecurityAutoConfiguration.class})
+//@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class, SecurityAutoConfiguration.class})
+@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class})
 public class RestfulApplication {
 
     public static void main(String[] args) {

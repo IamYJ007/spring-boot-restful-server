@@ -32,6 +32,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    //localhost:8080/user/1
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getUserById(@PathVariable("id") int id) {
         LOG.info("Fetching User with id " + id);
@@ -42,6 +43,7 @@ public class UserController {
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
 
+    //localhost:8080/user/create
     @PostMapping(value = "/create", headers = "Accept=application/json")
     public ResponseEntity<Void> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder) {
         System.out.println("Creating User " + user.getName());
@@ -51,6 +53,7 @@ public class UserController {
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
 
+    //localhost:8080/user/get
     @GetMapping(value = "/get", headers = "Accept=application/json")
     public List<User> getAllUser() {
         List<User> tasks = userService.getUser();
@@ -58,6 +61,7 @@ public class UserController {
 
     }
 
+    //localhost:8080/user/update
     @PutMapping(value = "/update", headers = "Accept=application/json")
     public ResponseEntity<String> updateUser(@RequestBody User currentUser) {
         System.out.println("sd");
@@ -69,6 +73,7 @@ public class UserController {
         return new ResponseEntity<String>(HttpStatus.OK);
     }
 
+    //localhost:8080/user/1
     @DeleteMapping(value = "/{id}", headers = "Accept=application/json")
     public ResponseEntity<User> deleteUser(@PathVariable("id") int id) {
         User user = userService.findById(id);
