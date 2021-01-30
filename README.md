@@ -2,8 +2,8 @@
 
 ### Guides
 
-Create DB in mysql userdb
-Set all properties in application.properties
+1. Create DB in mysql userdb
+2. Set all properties in application.properties
 
 ### Security
 use basic auth
