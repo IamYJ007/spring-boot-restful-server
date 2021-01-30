@@ -1,5 +1,7 @@
 # Getting Started
 
+In this repo i have created CRUD operations (Get, Put, Post, Delete) API using spring boot
+
 ### Guides
 
 1. Create DB in mysql userdb
