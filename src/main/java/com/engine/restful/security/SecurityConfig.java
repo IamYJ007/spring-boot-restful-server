@@ -1,4 +1,3 @@
-/*
 package com.engine.restful.Security;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -41,4 +40,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .httpBasic();
     }
-}*/
+}
