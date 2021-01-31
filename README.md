@@ -2,6 +2,13 @@
 
 In this repo i have created CRUD operations (Get, Put, Post, Delete) API using spring boot
 
+### Tools Used
+
+1. DB - MySql - MySql Workbench
+2. Java 11, Spring boot - hibernate, backend mvc
+3. Test - Postman
+4. IDE - IntellIj
+
 ### Guides
 
 1. Create DB in mysql userdb
