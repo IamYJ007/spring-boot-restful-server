@@ -1,3 +1,4 @@
+/*
 package com.engine.restful.configuration;
 
 import java.util.Properties;
@@ -70,3 +71,4 @@ public class HibernateConfiguration {
     }
 
 }
+*/
